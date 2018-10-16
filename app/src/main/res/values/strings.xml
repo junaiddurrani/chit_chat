@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Chit chat</string>
+    <string name="email_username">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="or">OR</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="create_account">Create account</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_your_status">Type your status</string>
+    <string name="favorite">Favorite</string>
+    <string name="comments">Comment</string>
+    <string name="add_caption">Add caption</string>
+    <string name="add_blog">Post</string>
+    <string name="friends">Friends</string>
+    <string name="following">Following</string>
+    <string name="message">Messages</string>
+    <string name="gender">Gender</string>
+    <string name="not_set">Not set</string>
+    <string name="unknown">Unknown</string>
+    <string name="birthday">Birthday</string>
+    <string name="view_blog">News feeds</string>
+    <string name="new_name">New name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save_changes">Save changes</string>
+    <string name="send_request">Send Request</string>
+    <string name="check_new_messages">Check new messages</string>
+    <string name="your_message">Your message</string>
+    <string name="send">Send</string>
+    <string name="delete_this_chat">Delete this chat</string>
+    <string name="add">Add</string>
+    <string name="write_comment">Type comment</string>
+    <string name="accept">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="friend_requests">Friend Requests</string>
+</resources>

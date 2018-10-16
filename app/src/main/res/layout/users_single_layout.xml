@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/one">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/userImage"
+            android:src="@drawable/blank_pic" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:layout_alignTop="@+id/userImage"
+            android:layout_toEndOf="@+id/userImage"
+            android:layout_marginStart="7dp"
+            android:layout_toRightOf="@+id/userImage"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/online"
+            android:id="@+id/onlineDot"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/userName"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_toEndOf="@+id/userImage"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/userImage"
+            android:layout_marginLeft="6dp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

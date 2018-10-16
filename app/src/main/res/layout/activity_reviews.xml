@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSilver"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_one">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/commentRefresh">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/layout_one"
+        android:gravity="bottom"
+        android:background="@color/login_form_details"
+        android:paddingBottom="32dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/write_commment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:gravity="start|center_vertical"
+                android:hint="@string/write_comment"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="3"
+                android:maxLines="10"
+                android:minLines="1"
+                android:padding="10dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="8dp"
+                android:paddingStart="5dp"
+                android:scrollbars="none"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/postComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.15"
+                android:text="@string/add"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

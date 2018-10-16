@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:id="@+id/userRequestImage"
+        android:scaleType="fitXY"
+        android:src="@drawable/blank_pic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userRequestImage"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/userRequestName"
+        android:layout_toRightOf="@+id/userRequestImage"
+        android:layout_marginLeft="18dp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userRequestImage"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/userRequestName"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/userRequestEmail"
+        android:layout_toRightOf="@+id/userRequestImage"
+        android:layout_marginLeft="6dp"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userRequestEmail"
+        android:orientation="horizontal"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/userRequestImage"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="@string/accept"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/requestAcceptButton"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/confirm_button_background" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="@string/delete"
+            android:layout_marginStart="5dp"
+            android:id="@+id/requestDeclineButton"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/delete_button_background" />
+
+    </LinearLayout>
+
+</RelativeLayout>

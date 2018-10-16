@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddBlog">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/add_btn"
+        android:id="@+id/selectImage"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectImage"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/one"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/descText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_caption"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:maxLines="50"
+            android:minLines="1"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="5"
+            android:textColor="@android:color/black"
+            android:padding="15dp"
+            android:background="@drawable/edittext_back"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:layout_below="@+id/one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add_blog"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/addPost"
+        android:background="@drawable/button_design"/>
+
+</RelativeLayout>
